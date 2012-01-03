@@ -1,0 +1,37 @@
+---
+layout: header
+---
+
+<div class="container case">
+
+  <div class="row">
+
+	<div class="eight columns">
+
+  <%- @content %>
+</div>
+  
+  	<div class="four columns">
+ 
+
+
+		<div class="panel hide-on-phones">
+    		<h4>Training and Mentoring</h4>
+  			<p>Enterprise Software must be developed in-house continuously. I provide training and mentoring, from framework adoption to the most advanced scenarios.</p>
+  			
+  			<h4>Enterprise Consulting</h4>
+  			<p>I enjoy working along companies designing their Enterprise Systems;</p>
+  			
+  				<a href="/contact.html" class="nice radius blue button mobile src-download">Contact Me</a>
+        
+    </div>
+
+  	
+  	</div>
+  </div>
+</div>
+
+
+
+
+</div>

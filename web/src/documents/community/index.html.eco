@@ -1,0 +1,63 @@
+---
+title: 'Open Source Community'
+layout: 'header'
+---
+
+
+<div class="row community">
+    
+  <div class="nine columns ">
+    
+
+    <h4 class="subheader">Jungle Dynamics community outreach program</h4>
+    
+    <div class="row">
+        <div class="six columns">
+            <ul>
+                <li><h5>Montly Meetings</h5>Developer and Designer Reunions sponsored by the top firms in Costa Rica.</li>
+                
+                <li><h5>Presentations</h5>Video Recorded topics on the bleeding edge technologies being used in the most advanced markets.</li>
+                
+                <li><h5>Framework Rankings</h5>A services to the community so that its members stay up to date with the latest development trends.</li>                
+            </ul>
+            </div>
+            
+            <div class="six columns">
+            <ul>
+            
+            <li><h5>Semester Conferences</h5>A Bi-anual conference in an exotic destination Costa Rica for developers and entrepreneurs including Start Up Demos and presentations from international speakers.</li>
+
+
+                <li><h5>News</h5>A collection of user submitted stories, voted and ranked according to our communities interests.</li>
+                
+                <li><h5>Tutorials</h5>Jungle Dynamics Open Source Knowledge, free tutorials for all members. The same ones we use in our training and mentoring sessions.</li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <hr />
+    
+    <h1>More Coming Soon</h1>
+  <h6>Due February 2012</h6>
+  <hr />
+
+  </div>
+  
+      <div class="three columns">
+          <div class="panel hide-on-phones">
+              <h4>Open Source Monthly Meeting</h4>
+              <h5>Modern App Development with Open Source Technology</h5>
+              <p>25 January -San Jose , Costa Rica</p>
+              <a class="nice button">Free Registration</a>
+          </div>
+
+          
+      </div>
+  </div>
+  
+</div>
+
+
+
+  </div>  

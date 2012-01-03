@@ -1,17 +1,16 @@
-
+---
+title: "Open Source Tutorials"
+layout: 'tutorial'
+description: 'Third Post le Eco templates'
+post_title: "Another NodeJS"
+---
   <div class="frame">
     <h5>Background</h5>
     <p>First we used to build html web sites with Adobe's Dreamweaver, using templates to be follow DRY principles. Next we moved toward CMS like Drupal , Wordpress.</p>
     <p>We got accostumbed to working with dynamic database driven sites, however most of the time those sites remain static for a long period of time. The reason we kept using such patters for blogs and sites was because of how complicated it used to be to edit html, ftp changes , etc.</p>
     
     
-    <h5>Trend</h5>
-    <p>With Rails and Sinatra many of us started using templates and libraries like Jekill to generate database-free static web sites that we could quickly create and update in our favorite template engine/language.</p>
     
-    <p>Still Rails seemed like an overkill for my personal web site, consisting of a couple of pages, I also wanted to try and build a simple static blog with NodeJS</p>
-
-    <img src="images/docpad_folder.png"/>
-
   <h5>Docpad</h5>
   <p>I was thinking that it was far better to compile the html for my static site locally, rather than using a templating engine like Jade. Even thou it was important to avoid copy&pasting my headers and footers all over the place; It was worst ( for me ) to start tweeking my NodeJS server that I got set up for my Async UI's.</p>
   
@@ -39,26 +38,13 @@
     <p>Create new Spine App: <q>spine app blog</q> which will create a folder named blog and inside it another one named public. The rest is out of scope.</p>
     <p>Next go ahead scaffolding Docpad simplest App into the /public folder. <q>git clone git://github.com/balupton/canvas.docpad.git</q> </p>
     
-    <p>Inside the canvas.docpad folder , copy the /src and /out folders into the /public folder.Erase /public/canvas.docpad</p>
-
-    <p>Docpad compiles the content of /src into /out. I am sure there are far better ways of making docpad deploy to the /public folder or using Guard or Watch to move  /public/out/* into /public ; however for me the simplest and quicker way turn out to be a script</p>
-    <script src="https://gist.github.com/1541753.js"> </script>
-    
-    <p>In the project root type hem server, and every time you make a change to anything inside the public/src run the script. Docpad also comes with an automatic compiler, but is far to slow for my taste; I run faster by cmd-tab and two terminal windows.</p>
-    
-
+ 
     <h5>How the Case Studies and Blog work?</h5>
     <p>HA! this is the tricky part and what I liked the most. So using the snippet I provided back there, you can list all files in a path. ej: inside the for loop check out >>>> if document.url.indexOf('/blog/posts') == 0 </p>
     
     <p>This way I can also use my own meta data for example document.sub_title or the Docpad's API like title, content, url, etc</p>
 
-    <p>In this site I use two flavors, the Case Studies and the Blog. Case studies are straight-forwared. A folder named Enterprise with several files including and index.html.eco; I also use a enterprise layout that does the trick for all files and sets them on the side bar as links. That's pretty much it, I did it with 4 case studies and ended up with 4 micro-sites very quickly.</p>
-
-    <p>The blog section is a litter more trickier, because it needs an index page to show the features posts. In order for this to work given the Layout Inheritance I made so that each post inside /blog/posts delegates its title to the blog layout, but the index (featured posts  )  does show each title and content for all files inside the path /blog/posts/front.</p>
-
-    <p>Now its so simple to right posts and control where they appear, just like I am doing with this posts.</p>
-    
-    <h5>Deploy</h5>
+     <h5>Deploy</h5>
     <p>Well first commit the code to Git: <a href="https://github.com/rodriguezartav/rodriguezartav-site">Web Site Code</a></p>
     
     <p>Then do a heroku create rodriguezartav --stack cedar </p>
@@ -68,7 +54,7 @@
     <p>The web site is on http://rodriguezartav.herokuapp.com</p>
     
     
-      </p>
+  	</p>
 
 
    </div>  

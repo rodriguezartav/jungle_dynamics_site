@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+  <div id="insideContainer" class="container">
+	  <div class="row hide-on-phones">
+	    <a href="index.php" class="back two columns hide-on-phones">&larr; Home</a>
+	  </div>
+	  
+	  
+	  <div class="row">
+	    <div class="twelve columns">
+	    	<nav class="on-page hide-on-phones">
+	    		<ul>
+	    			<li><a href="/cases/enterprise">Projects</a></li>
+	    			<li ><a href="/community">Open Source Community</a></li>
+	    			<li><a href="/tutorial">Open Source Tutorials</a></li>
+	    		</ul>
+	    	</nav>
+	      <h1 class="light-weight"><%= @document.title %></h1>
+	    </div>
+	  </div>
+  
+	<%-@content%>
+  
+</div>

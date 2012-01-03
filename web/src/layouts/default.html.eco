@@ -1,0 +1,107 @@
+<!DOCTYPE html>	
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="description" content="Foundation is an easy to use, powerful, and flexible framework for building rapid prototypes and production code on any kind of device." />
+
+	<link rel="stylesheet" href="/fonts.css" type="text/css" charset="utf-8">
+	
+	<link rel="stylesheet" href="/application.css" type="text/css" charset="utf-8">
+  
+	
+	<title>Jungle Dynamics || Startup Accelerator</title>
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="icon" type="image/ico" href="favicon.ico">
+  
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="src/stylesheets/ie.css">
+	<![endif]-->
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+  <script src="/application.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" charset="utf-8">
+     var jQuery  = require("jqueryify");
+     var exports = this;
+     jQuery(function(){
+       var App = require("index");
+       exports.app = new App({el: $("body")});      
+     });
+   </script>
+
+</head>
+
+<body>
+
+	  
+  <!-- ZURBar -->
+  <div id="zurBar" class="container">
+    <div class="row">
+      <div class="four columns">
+        <h1><a href="/">@jungle_dynamics</a></h1>
+      </div>
+      <div class="eight columns hide-on-phones">
+      	<strong class="right">
+      		<a href="/blog">Tech News</a>
+      		<a href="/community">Open Source Community: Next Event January 25</a>
+      		<a href="/contact.html" class="small blue nice button">Contact</a>
+      		
+      	</strong>
+      </div>
+    </div>
+  </div>
+  <!-- /ZURBar -->
+  
+
+  
+	<%-@content%>
+  
+  
+  <!-- Das Footer -->
+    <footer class="row footer">
+      <section class="three columns">
+        <h6><strong>About Jungle Dynamics</strong></h6>
+        <p>The work of Arnoldo Mora and Roberto Rodriguez; Currently in Planning and Funding Stages.</p>
+      </section>
+
+      <section class="five columns">
+        <h6><strong>What do we do?</strong></h6>
+        <p>We are a Start Up investment firm, based on contemporary business dynamics of high end technology software development that support the creating of high tech start ups and communities in Latin America. </p>
+      </section>
+
+      <section class="four columns">
+        <h6><strong>How do we do it</strong></h6>
+        <p>By helping VC's participate in the first startup stages, securing their angel investments; By promoting a community and recruiting best resources and serving as a catalyst to Start Ups during the first most delicate stages.</p>
+        <a class="button nice rounded" href="/contact.html">Contact Us</a>
+
+        <ul class="block-grid three-up">
+            <li>
+
+            <!-- Place this render call where appropriate -->
+        </li>
+        <li>
+
+
+        </li>
+        <li>
+
+        </li>
+    </div>
+      </section>
+    </footer>
+    <!-- /Das Footer -->
+
+  </body>
+  </html>
