@@ -7,7 +7,9 @@ layout: 'blog'
 <% for document in @documents: %>
     <% if document.url.indexOf('/blog/posts/front') is 0: %>
         <li><div class="panel">
-          <h5><a href="<%= document.url %>"><%= document.posttitle %></a></h5>
+          <% link = document.link or  document.url %>
+          <% target = if document.link then '_blank' else '_self' %>
+          <h5><a target="<%= target %>" href="<%= link  %>"><%= document.posttitle %></a></h5>
           <p><%= document.description %></p>
         </div></li>
     <% end %>

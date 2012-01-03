@@ -3,14 +3,10 @@ layout: header
 title: 'Blog'
 ---
 
-
- 
-
 <div class="row blog">
 
-    
   <div class="nine columns post_list">
-    <h4><%= @document.post_title %></h4>
+    <h4><%= @document.posttitle %></h4>
     <%- @content %>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
