@@ -30,18 +30,30 @@ title: 'Blog'
   </div>
   
   	<div class="three columns">
-  
+
+
+    <div class="panel hide-on-phones">
+			<h4>Follow Us</h4>
+			<p>Events, answers and updates</p>
+			<p>
+      <a href="https://twitter.com/rodriguezartav" data-size="large" class="button nice twitter-follow-button" data-show-count="false" data-lang="en">Follow me</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>  			</p>
+		</div>
+		
     
-  		<div class="panel hide-on-phones">
-  			<h4>Follow Me</h4>
-  			<p>I post regularly to this blog and twitter.</p>
-  			<p>
-        <a href="https://twitter.com/rodriguezartav" data-size="large" class="button nice twitter-follow-button" data-show-count="false" data-lang="en">Follow me</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>  			</p>
-  		</div>
 
-     
-
+    <div class="panel">
+      <h4>Other Posts</h4>
+      <% location = @document.url.split('/',2).join('/') %>
+      <% for document in @documents: %>
+          <% if document.url.indexOf(location) is 0: %>
+              <h5><a href="<%= document.url %>"><%= document.posttitle %></a></h5>
+              <p><%= document.description %></p>
+          <% end %>
+      <% end %>
+    
+    </div>
+    
   		
   	</div>
   </div>

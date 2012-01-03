@@ -1,8 +1,8 @@
 ---
 title: "Open Source Tutorials"
-layout: 'tutorial'
+layout: 'blog'
 description: 'Third Post le Eco templates'
-post_title: "Another NodeJS"
+posttitle: "Another NodeJS"
 ---
   <div class="frame">
     <h5>Background</h5>

@@ -1,8 +1,8 @@
 ---
-title: "Open Source Tutorials"
-layout: 'tutorial'
-post_title: 'Responsive Design with Foundation'
-description: "Css framework that adapts to desktop,tablet and mobile screens."
+title: 'Open Source Tutorials'
+layout: 'blog'
+posttitle: 'Responsive Design with Foundation'
+description: 'Css framework that adapts to desktop,tablet and mobile screens.'
 ---
   <div class="frame">
   

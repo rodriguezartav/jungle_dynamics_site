@@ -1,8 +1,8 @@
 ---
-title: "Open Source Tutorials"
-layout: 'tutorial'
+title: 'Open Source Tutorials'
+layout: 'blog'
 description: 'Using Docpad to pre-compile Eco templates'
-post_title: "Static Blog in NodeJS"
+posttitle: 'Static Blog in NodeJS'
 ---
   <div class="frame">
     <h5>Background</h5>
